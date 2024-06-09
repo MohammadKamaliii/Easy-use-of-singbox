@@ -1,0 +1,12 @@
+[Unit]
+Description=<description about this service>
+
+[Service]
+User=root
+ExecStart=/proxy/mainfiles/sn.sh
+# optional items below
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
